@@ -19,7 +19,7 @@ import HN from '../public/images/HN.webp'
 import PN from '../public/images/PN.jpg'
 import BNPN from '../public/images/BNPN.jpg'
 import BNPH from '../public/images/BNPH.jpg'
-import Anwar from '../public/images/anwar.jpg'
+import PM10 from '../public/images/pm10.jpg'
 import Haircut from '../public/images/haircut.jpg'
 import Hint from '../public/images/hint.jpg'
 import Meeting from '../public/images/meeting.jpg'
@@ -269,7 +269,7 @@ export default function Home() {
 
         <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
           But PN's effort came in too little, too late as the Rulers have already DSAIded.</p>
-        <Image className="mx-auto pt-4" width="500" src={Anwar} alt="Dato Seri Anwar Ibrahim" />
+        <Image className="mx-auto pt-4" width="500" src={PM10} alt="10th Prime Minister Dato Seri Anwar Ibrahim" />
         <p className="pb-1 text-[11px] text-center text-gray-600">Anwar Ibrahim Twitter</p>
         <p className="px-4 py-2 text-center mx-auto text-md font-serif text-gray-400">
           Dato Seri Anwar Ibrahim is appointed as Malaysia's 10th Prime Minister.</p>
