@@ -2,12 +2,12 @@ import clsx from "clsx";
 
 export default function Diagram(
     { count, PH, PN, BN, GPS, GRS, others }: 
-    { count: number, PH: boolean, PN: boolean, BN: boolean, GPS: boolean, GRS: boolean, others: boolean}) {
+    { count: number, PH: number, PN: number, BN: number, GPS: number, GRS: number, others: number}) {
     return (
         <svg className="" width="360" height="185">
             <g>
                 <text x="180" y="175"
-                    fill="#FFFFFF" font-size="36px" font-weight="bold" text-align="center" text-anchor="middle" font-family="sans-serif">{count}</text>
+                    fill="#FFFFFF" fontSize="36px" font-weight="bold" text-align="center" text-anchor="middle" font-family="sans-serif">{count}</text>
                 <g className={clsx(PH ? "opacity-100" : "opacity-20")} fill="#FF2A2A" id="PH"><title>Pakatan Harapan</title>
                     <circle cx="11.32" cy="175.00" r="5.00" />
                     <circle cx="23.83" cy="175.00" r="5.00" />
@@ -90,7 +90,8 @@ export default function Diagram(
                     <circle cx="111.67" cy="39.48" r="5.00" />
                     <circle cx="118.00" cy="50.31" r="5.00" />
                     <circle cx="145.11" cy="106.62" r="5.00" />
-                    <circle cx="124.34" cy="61.14" r="5.00" /></g>
+                    <circle cx="124.34" cy="61.14" r="5.00" />
+                    </g>
                 <g className={clsx(PN ? "opacity-100" : "opacity-20")} fill="#002255" stroke-width="0.00" stroke="#000000" id="PN"> <title>Perikatan Nasional</title>
                     <circle cx="130.71" cy="71.96" r="5.00" />
                     <circle cx="137.11" cy="82.79" r="5.00" />
@@ -165,11 +166,11 @@ export default function Diagram(
                     <circle cx="233.48" cy="103.00" r="5.00" />
                     <circle cx="227.31" cy="113.94" r="5.00" />
                     <circle cx="278.71" cy="43.13" r="5.00" />
+                <circle cx="272.51" cy="54.08" r="5.00" />
                 </g>
                 <g className={clsx(BN ? "opacity-100" : "opacity-20")} fill="#000080" stroke-width="0.00" stroke="#000000"
                     id="BN">
                     <title>Barisan Nasional</title>
-                    <circle cx="272.51" cy="54.08" r="5.00" />
                     <circle cx="266.32" cy="65.05" r="5.00" />
                     <circle cx="260.15" cy="76.06" r="5.00" />
                     <circle cx="253.99" cy="87.12" r="5.00" />
@@ -199,11 +200,11 @@ export default function Diagram(
                     <circle cx="282.38" cy="119.84" r="5.00" />
                     <circle cx="304.01" cy="107.30" r="5.00" />
                     <circle cx="325.64" cy="94.77" r="5.00" />
+                <circle cx="261.89" cy="134.35" r="5.00" />
                 </g>
                 <g className={clsx(GPS ? "opacity-100" : "opacity-20")} fill="#e11d48" stroke-width="0.00" stroke="#000000"
                     id="GPS">
                     <title>Gabungan Parti Sarawak</title>
-                    <circle cx="261.89" cy="134.35" r="5.00" />
                     <circle cx="318.26" cy="107.21" r="5.00" />
                     <circle cx="296.66" cy="119.86" r="5.00" />
                     <circle cx="275.08" cy="132.58" r="5.00" />
@@ -226,37 +227,27 @@ export default function Diagram(
                     <circle cx="332.72" cy="146.97" r="5.00" />
                     <circle cx="271.79" cy="160.91" r="5.00" />
                     <circle cx="345.51" cy="147.10" r="5.00" />
+                <circle cx="284.43" cy="160.40" r="5.00" />
                 </g>
                 <g className={clsx(GRS ? "opacity-100" : "opacity-20")} fill="#0891b2" stroke-width="0.00" stroke="#000000"
                     id="GRS">
                     <title>Gabungan Rakyat Sabah</title>
-                    <circle cx="284.43" cy="160.40" r="5.00" />
                     <circle cx="297.15" cy="160.57" r="5.00" />
                     <circle cx="309.82" cy="160.70" r="5.00" />
                     <circle cx="322.46" cy="160.81" r="5.00" />
                     <circle cx="335.08" cy="160.91" r="5.00" />
                     <circle cx="347.68" cy="160.98" r="5.00" />
+                    <circle cx="261.10" cy="175.01" r="5.00" />
                 </g>
                 <g className={clsx(others ? "opacity-100" : "opacity-20")} fill="#581c87" stroke-width="0.00" stroke="#000000" id="6_Party-7">
                     <title>Others</title>
                     <circle cx="298.64" cy="175.00" r="5.00" />
-                {/* </g>
-                <g fill="#C4DADE" stroke-width="0.00" stroke="#000000" id="5_Party-6">
-                    <title>Party 6</title> */}
-                    <circle cx="261.10" cy="175.01" r="5.00" />
                     <circle cx="273.62" cy="175.00" r="5.00" />
                     <circle cx="286.13" cy="175.00" r="5.00" />
-                {/* </g>
-                <g fill="#CCCCCC" stroke-width="0.00" stroke="#000000" id="7_Party-8">
-                    <title>Party 8</title> */}
                     <circle cx="311.15" cy="175.00" r="5.00" />
                     <circle cx="323.66" cy="175.00" r="5.00" />
                     <circle cx="336.17" cy="175.00" r="5.00" />
-                </g>
-                <g fill="#000000" stroke-width="0.00" stroke="#000000"
-                    id="Vacant">
-                    <title>Vacant</title>
-                    <circle cx="348.68" cy="175.00" r="5.00" />
+                <circle cx="348.68" cy="175.00" r="5.00" />
                 </g>
             </g>
         </svg>

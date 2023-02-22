@@ -1,51 +1,45 @@
-import { useState } from 'react'
+import { useReducer, useState } from 'react'
 import clsx from 'clsx';
 import Diagram from './Diagram';
 
 export default function Numbers() {
-    const [number, setNumber] = useState<number>(82);
-    const [isPHClicked, setPHIsClicked] = useState<boolean>(true);
-    const [isPNClicked, setPNIsClicked] = useState<boolean>(false);
-    const [isBNClicked, setBNIsClicked] = useState<boolean>(false);
-    const [isGPSClicked, setGPSIsClicked] = useState<boolean>(false);
-    const [isGRSClicked, setGRSIsClicked] = useState<boolean>(false);
-    const [isOtherClicked, setIsOtherClicked] = useState<boolean>(false);
+    const [PH, setPH] = useState<number>(0);
+    const [PN, setPN] = useState<number>(0);
+    const [BN, setBN] = useState<number>(0);
+    const [GPS, setGPS] = useState<number>(0);
+    const [GRS, setGRS] = useState<number>(0);
+    const [other, setOther] = useState<number>(0);
+    const number : number = PH + PN + BN + GPS + GRS + other;
 
     function handlePHClick() {
-        setPHIsClicked(!isPHClicked);
-        isPHClicked ? setNumber(number - 82) : setNumber(number + 82);
+        PH ? setPH(0) : setPH(82);
     }
     function handlePNClick() {
-        setPNIsClicked(!isPNClicked);
-        isPNClicked ? setNumber(number - 73) : setNumber(number + 73);
+        PN ? setPN(0) : setPN(74);
     }
     function handleBNClick() {
-        setBNIsClicked(!isBNClicked);
-        isBNClicked ? setNumber(number - 30) : setNumber(number + 30);
+        BN ? setBN(0) : setBN(30);
     }
     function handleGPSClick() {
-        setGPSIsClicked(!isGPSClicked);
-        isGPSClicked ? setNumber(number - 23) : setNumber(number + 23);
+        GPS ? setGPS(0) : setGPS(23);
     }
     function handleGRSClick() {
-        setGRSIsClicked(!isGRSClicked);
-        isGRSClicked ? setNumber(number - 6) : setNumber(number + 6);
+        GRS ? setGRS(0) : setGRS(6);
     }
     function handleOtherClick() {
-        setIsOtherClicked(!isOtherClicked);
-        isOtherClicked ? setNumber(number - 7) : setNumber(number + 7);
+        other ? setOther(0) : setOther(7);
     }
 
     return (
         <>
             <div className='grid md:grid-rows-1 grid-rows-2 grid-flow-col-dense justify-center py-4'>
                 <Diagram count={number}
-                    PH={isPHClicked}
-                    PN={isPNClicked}
-                    BN={isBNClicked}
-                    GPS={isGPSClicked}
-                    GRS={isGRSClicked}
-                    others={isOtherClicked} />
+                    PH={PH}
+                    PN={PN}
+                    BN={BN}
+                    GPS={GPS}
+                    GRS={GRS}
+                    others={other} />
                 <div className='font-serif text-white text-center justify-self-center w-60 h-32 p-2 place-self-center'>
                     {number < 112
                         ? <div><p className='font-4xl font-bold'>Minority Government</p>
@@ -75,32 +69,32 @@ export default function Numbers() {
             <div className='grid grid-rows-2 sm:grid-rows-1 grid-flow-col-dense gap-4 justify-center'>
                 <button className=
                     {clsx("px-2 py-4 bg-[#FF2A2A] hover:bg-red-500 text-white text-sm font-bold text-center uppercase w-[80px] leading-none ",
-                        isPHClicked ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handlePHClick}>
+                        PH ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handlePHClick}>
                     PH
                 </button>
                 <button className=
                     {clsx("px-2 py-4 bg-[#002255] hover:bg-sky-800 text-white text-sm font-bold text-center uppercase w-[80px] leading-none",
-                        isPNClicked ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handlePNClick}>
+                        PN ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handlePNClick}>
                     PN
                 </button>
                 <button className=
                     {clsx("px-2 py-4 bg-[#000080] hover:bg-blue-800 text-white text-sm font-bold text-center uppercase w-[80px] leading-none",
-                        isBNClicked ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handleBNClick}>
+                        BN ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handleBNClick}>
                     BN
                 </button>
                 <button className=
                     {clsx("px-2 py-4 bg-rose-600 hover:bg-rose-500 text-white text-sm font-bold text-center uppercase w-[80px] leading-none",
-                        isGPSClicked ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handleGPSClick}>
+                        GPS ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handleGPSClick}>
                     GPS
                 </button>
                 <button className=
                     {clsx("px-2 py-4 bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-bold text-center uppercase w-[80px] leading-none",
-                        isGRSClicked ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handleGRSClick}>
+                        GRS ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handleGRSClick}>
                     GRS
                 </button>
                 <button className=
                     {clsx("px-2 py-4 bg-purple-900 hover:bg-purple-800 text-white text-sm font-bold text-center uppercase w-[80px] leading-none",
-                        isOtherClicked ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handleOtherClick}>
+                        other ? 'ring ring-black scale-105' : 'scale-100 opacity-25')} onClick={handleOtherClick}>
                     Others
                 </button>
             </div>

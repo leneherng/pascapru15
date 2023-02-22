@@ -43,11 +43,10 @@ export default function Home() {
         </p>
         <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
           The votes have been cast, now all the Rakyat has to do is wait for a government to form,
-          and perhaps declare the next day a holy day.
-        </p>
+          and ask the all-important question:</p>
         <div className="max-w-screen px-4 py-4">
           <Image className="mx-auto" width="400" src={Cuti} alt="Bila cuti" />
-          <p className="pb-1 text-[11px] text-center text-gray-600">KC Green</p>
+          <p className="pb-1 text-[11px] text-center text-gray-600">MGAG, KC Green</p>
         </div>
       </div>
 
@@ -70,7 +69,7 @@ export default function Home() {
           <div className="w-[200px]">
             <Image width="200" src={Number} alt="" />
             <p className="pb-1 text-[11px] text-gray-600">SCMP</p>
-            <p className="text-sm font-serif text-gray-400">But Anwar says that he has the numbers (for the nth time) </p>
+            <p className="text-sm font-serif text-gray-400">But Anwar says that he has the numbers (again for the nth time) </p>
           </div>
         </div>
         <div className="py-4">
@@ -123,8 +122,8 @@ export default function Home() {
       </div>
 
       <div className="container px-4 py-8 mx-auto">
-        <h5 className="text-center text-md tracking-tight font-normal text-gray-400">PN + Borneo Bloc + BN</h5>
-        <p className="pb-2 text-center text-2xl font-semibold font-serif text-white">Days of Future Past</p>
+        <h5 className="text-center text-md tracking-tight font-normal text-gray-400">PN + BN + Borneo</h5>
+        <p className="pb-2 text-center text-2xl font-semibold font-serif text-white">Alliance Born Anew</p>
         <p className="px-4 py-4 md:w-[500px] text-md mx-auto font-serif text-gray-400">
           As Malaysians experience its first hung parliament, emergency meetings are being held to deal with the implications that came along it.</p>
         <Image className="mx-auto" width="500" src={Meeting} alt="Muhyiddin with Hadi Awang and Abang Johari" />
@@ -169,12 +168,12 @@ export default function Home() {
           any political cooperation.</p>
         <div className="py-2">
           <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-            Meanwhile, PH supporters rejoice as Zahid came in with a critical save from Muhyiddin's score attempt.</p>
+            Meanwhile, PH supporters rejoice as Zahid comes in with a clutch save just when Anwar's hope was starting to fade.</p>
           <Image className="pt-2 mx-auto" width="300" src={HN} alt="Harapan Nasional" />
           <p className="pb-1 text-[11px] text-center text-gray-600">u/superfiery via Reddit</p>
         </div>
         <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-          Speaking of which, Anwar also broke silence. Turns out..</p>
+          Speaking of which, Anwar has also broken silence. It turns out..</p>
 
         <div className="py-2 flex flex-row space-x-4 md:space-x-8 place-content-center">
           <div className="w-[200px]">
@@ -198,7 +197,7 @@ export default function Home() {
           <Image className="mx-auto" width="500" src={BNPH} alt="Meeting between PH and BN" />
           <p className="pb-1 text-[11px] text-center text-gray-600">Fahmi Fadzil via Facebook</p>
           <p className="px-4 py-4 text-md md:w-[500px] mx-auto font-serif text-gray-400">
-            Anwar says he is pleased with the ongoing negotiations with BN to form a government under his leadership.
+            After the meeting, Anwar says he is pleased with the ongoing negotiations with BN to form a government under his leadership.
             BN however has requested for more time to finalise their agreement.</p>
         </div>
 
@@ -206,17 +205,17 @@ export default function Home() {
           <h5 className="text-center text-md tracking-tight font-normal text-gray-400">Stalemate</h5>
           <p className="pb-4 text-center text-2xl font-semibold font-serif text-white">The King vs The Kingmaker</p>
           <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-            However on the next day, BN Treasurer-General Hishammuddin announces that he would rather be sacked than work with DAP or Anwar.</p>
+            On the next day, tables turn as BN Treasurer-General Hishammuddin announces that he would rather be sacked than work with DAP or Anwar.</p>
           <Image className="mx-auto pt-4" width="400" src={Hisham} alt="Hisham refuses to work with PH" />
           <p className="pb-1 text-[11px] text-center text-gray-600">Hishammuddin Hussein</p>
           <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-            Similarly, daughter of PM Ismail Sabri also claims his father is willing to be sacked from UMNO should BN work with PH.</p>
+            Similarly, daughter of PM Ismail Sabri also claims his father is ready to be sacked from UMNO should BN work with PH.</p>
           <Image className="mx-auto pt-4" width="250" src={Nina} alt="Ismail refuses to work with PH" />
           <p className="pb-1 text-[11px] text-center text-gray-600">Nina Ismail Sabri</p>
 
           <p className="px-4 py-4 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-            And on Tuesday 2pm sharp, Ismail Sabri states that BN has decided not to support PH nor PN to form
-            government and remain as opposition.</p>
+            And on Tuesday 2pm sharp, Ismail Sabri states that BN has decided to support neither PH nor PN to form
+            government and will remain as opposition.</p>
 
           <div className="py-4 flex flex-row space-x-4 md:space-x-8 place-content-center">
             <div className="w-[200px]">
@@ -229,24 +228,24 @@ export default function Home() {
               <Image width="200" src={PN} alt="Muhyiddin declines" />
               <p className="pb-1 text-[11px] text-gray-600">New Straits Times</p>
               <p className="text-sm font-serif text-gray-400">
-                Muhyiddin declined Agong's request for PH and PN to work together to form government.</p>
+                Muhyiddin reveals he declined Agong's request for PH and PN to work together to form government.</p>
             </div>
           </div>
 
           <p className="px-4 pt-12 pb-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-            The next day, BN meets with PN leaders at St Regis hotel after audience with Agong, raising questions of a PN-BN partnership.
-            On the other hand, a letter by Zahid to Agong goes viral as the letter shows support of BN's 30 MPs to Anwar as Prime Minister.</p>
+            The next day, BN meets with PN leaders at St Regis hotel after audience with Agong, raising further questions of a PN-BN partnership.
+            On the other hand, a letter by Zahid to Agong goes viral as the letter shows support of BN's 30 MPs to Anwar as 10th Prime Minister.</p>
           <Image className="mx-auto py-4" width="400" src={BN} alt="PH and PN wants BN dacing(scales)" />
 
           <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-            Will we see BN perform a U-turn on their decision yesterday? If so, who will they choose to work with? PH or PN?
+            Has BN performed a U-turn on their decision yesterday? If so, will they choose to work with PH or PN?
             Again, only time will tell..</p>
 
           <p className="px-4 pt-12 md:w-[500px] text-center text-md mx-auto font-serif text-gray-400">
-            Meanwhile.. </p>
+            Meanwhile at Istana Negara.. </p>
           <div className="w-[300px] md:w-[400px] mx-auto">
             <p className="py-2 mx-auto text-sm font-bold font-serif text-gray-400">Agong:</p>
-            <Image className="mx-auto" width="400" src={Fire} alt="Agong comes back to a mess" />
+            <Image className="mx-auto" width="400" src={Fire} alt="Agong comes back to a fire" />
             <p className="pb-1 text-[11px] text-center text-gray-600">Reddit</p>
           </div>
         </div>
@@ -257,14 +256,14 @@ export default function Home() {
         <p className="pb-4 text-center text-2xl font-semibold font-serif text-white">Hope Prevails</p>
 
         <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-          In an unexpected turn of events, BN's UMNO gives full support for Agong's unity government not headed by PN.
+          In an unexpected turn of events, BN's UMNO gives full support for Agong's unity government plan not headed by PN.
           Yet, PN Deputy Hadi Awang maintains they are ahead and motions to stay calm.</p>
         <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
           Later in the morning, Agong holds a special meeting with fellow Rulers at Istana Negara.
           Meanwhile, DAP Secretary-General Anthony Loke visits Premier Sarawak and makes open apology on behalf of DAP.
           Lim Guan Eng also apologises to both Sarawak Premier and GPS for his previous remarks.</p>
         <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
-          As GRS also gives support to Agong's unity government, 
+          As GRS follows suit to give support to Agong's unity government, 
           PN now agrees to <span className="italic">consider</span> Agong's unity government proposal as a last-ditch effort.</p>
 
         <p className="px-4 py-2 md:w-[500px] mx-auto text-md font-serif text-gray-400">
@@ -272,9 +271,9 @@ export default function Home() {
         <Image className="mx-auto pt-4" width="500" src={PM10} alt="10th Prime Minister Dato Seri Anwar Ibrahim" />
         <p className="pb-1 text-[11px] text-center text-gray-600">Anwar Ibrahim Twitter</p>
         <p className="px-4 py-2 text-center mx-auto text-md font-serif text-gray-400">
-          Dato Seri Anwar Ibrahim is appointed as Malaysia's 10th Prime Minister.</p>
+          Dato Seri Anwar Ibrahim will be appointed as Malaysia's 10th Prime Minister.</p>
         <p className="px-4 pt-48 text-center mx-auto text-md font-serif text-gray-400">
-          P.S Cuti you asked? He's got you covered - next Monday (28/11) will be a public holiday.</p>
+          P.S. Cuti you asked? He's got you covered - next Monday (28/11) will be a public holiday.</p>
       </div>
     </div>
   );
